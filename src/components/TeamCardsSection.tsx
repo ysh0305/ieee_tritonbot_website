@@ -1,5 +1,6 @@
 import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import {ArrowUpRight} from 'lucide-react';
 
 type TeamCard = {
@@ -73,7 +74,7 @@ function TeamCardItem({card}: {card: TeamCard}): ReactNode {
         </Link>
       </div>
 
-      <img src={card.imageSrc} className='w-3/5 object-contain h-[90%]'/>
+      <img src={useBaseUrl(card.imageSrc)} className='w-3/5 object-contain h-[90%]'/>
     </div>
   );
 }

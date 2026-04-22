@@ -13,11 +13,11 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
+  url: 'https://ysh0305.github.io',
+  baseUrl: '/ieee_tritonbot_website/',
 
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'ysh0305',
+  projectName: 'ieee_tritonbot_website',
 
   onBrokenLinks: 'throw',
 
@@ -170,8 +170,8 @@ const config: Config = {
         },
 
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://ssl.robocup.org/',
+          label: 'Robocup SSL',
           position: 'right',
         },
       ],

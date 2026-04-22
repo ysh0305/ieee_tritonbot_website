@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkieee_tritonbot_website=globalThis.webpackChunkieee_tritonbot_website||[]).push([[647],{7121(e,t,s){s.r(t),s.d(t,{default:()=>b});s(6540);var r=s(4164),i=s(7559),a=s(5500),o=s(2831),n=s(1656),u=s(4848);function b(e){return(0,u.jsx)(a.e3,{className:(0,r.A)(i.G.wrapper.docsPages),children:(0,u.jsx)(n.A,{children:(0,o.v)(e.route.routes)})})}}}]);

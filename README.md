@@ -1,17 +1,17 @@
-# Website
+# UCSD TritonBot Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
 
 ```bash
-yarn
+npm install
 ```
 
 ## Local Development
 
 ```bash
-yarn start
+npm run start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -19,23 +19,26 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Deployment
 
-Using SSH:
+This repo is configured to deploy automatically to GitHub Pages with GitHub Actions.
+
+1. Push to `main`.
+2. GitHub Actions runs `.github/workflows/deploy.yml`.
+3. The built site is deployed to GitHub Pages.
+
+One-time GitHub setup:
+
+1. Open repository `Settings` -> `Pages`.
+2. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+
+Manual fallback deploy from local machine:
 
 ```bash
-USE_SSH=true yarn deploy
+GIT_USER=ysh0305 npm run deploy
 ```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

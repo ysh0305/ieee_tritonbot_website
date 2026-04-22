@@ -13,7 +13,7 @@ This year the team has developed the first iteration of the robot with full comp
 
 <div style={{ textAlign: "center" }}>
   <img
-    src="/img/docusaurus.png"
+    src="/img/logo.png"
     alt="CAD rendering of v2026 MkII robot"
     style={{ width: "40%" }}
   />

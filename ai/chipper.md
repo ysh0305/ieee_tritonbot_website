@@ -26,6 +26,6 @@ The frame is planned to be made from aluminium 6061 alloy and manually machined.
 
 ### Figure 3
 
-![MkII lower assembly and chipper highlighted](/img/docusaurus.png)
+![MkII lower assembly and chipper highlighted](/img/logo.png)
 
 *Fig. 3. MkII lower assembly and chipper highlighted.*

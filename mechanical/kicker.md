@@ -27,6 +27,6 @@ The kicker design for MKIII is adapted to the Adafruit Large Push Pull Solenoid.
 
 ### Figure 2
 
-![MkII kicker](/img/docusaurus.png)
+![MkII kicker](/img/logo.png)
 
 *Fig. 2. MkII kicker.*

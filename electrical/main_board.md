@@ -6,7 +6,7 @@ title: Mainboard Design
 
 ### Figure 5
 
-![Overview of mainboard connections](/img/docusaurus.png)
+![Overview of mainboard connections](/img/logo.png)
 
 *Fig. 5. Overview of mainboard connections.*
 

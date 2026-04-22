@@ -67,6 +67,6 @@ The MkIII dribbler further introduces a two-degree-of-freedom damped assembly: t
 
 ### Figure 4
 
-![MkII dribbler](/img/docusaurus.png)
+![MkII dribbler](/img/logo.png)
 
 *Fig. 4. MkII dribbler.*

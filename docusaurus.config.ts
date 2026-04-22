@@ -5,8 +5,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: 'TritonBot UCSD',
-  tagline: 'Dinosaurs are cool',
+  title: 'UCSD TritonBot',
+  tagline: 'UC San Diego RoboCup SSL Team',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -15,6 +15,7 @@ const config: Config = {
 
   url: 'https://ysh0305.github.io',
   baseUrl: '/ieee_tritonbot_website/',
+  trailingSlash: false,
 
   organizationName: 'ysh0305',
   projectName: 'ieee_tritonbot_website',
@@ -38,7 +39,7 @@ const config: Config = {
             xslt: true,
           },
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/ysh0305/ieee_tritonbot_website/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -59,7 +60,7 @@ const config: Config = {
         routeBasePath: 'docs',
         sidebarPath: require.resolve('./sidebars.ts'),
         editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/ysh0305/ieee_tritonbot_website/tree/main/',
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
@@ -72,7 +73,7 @@ const config: Config = {
         routeBasePath: 'mechanical',
         sidebarPath: require.resolve('./sidebarsMechanical.ts'),
         editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/ysh0305/ieee_tritonbot_website/tree/main/',
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
@@ -85,7 +86,7 @@ const config: Config = {
         routeBasePath: 'electrical',
         sidebarPath: require.resolve('./sidebarsElectrical.ts'),
         editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/ysh0305/ieee_tritonbot_website/tree/main/',
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
@@ -98,7 +99,7 @@ const config: Config = {
         routeBasePath: 'embedded',
         sidebarPath: require.resolve('./sidebarsEmbedded.ts'),
         editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/ysh0305/ieee_tritonbot_website/tree/main/',
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
@@ -111,7 +112,7 @@ const config: Config = {
         routeBasePath: 'ai',
         sidebarPath: require.resolve('./sidebarsAi.ts'),
         editUrl:
-          'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          'https://github.com/ysh0305/ieee_tritonbot_website/tree/main/',
         remarkPlugins: [remarkMath],
         rehypePlugins: [rehypeKatex],
       },
@@ -127,9 +128,9 @@ const config: Config = {
     },
 
     navbar: {
-      title: 'UCSD Tritonbot',
+      title: 'UCSD TritonBot',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'UCSD TritonBot Logo',
         src: 'img/logo.png',
       },
       items: [

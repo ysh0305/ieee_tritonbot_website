@@ -1,0 +1,8 @@
+{
+  "label": "Mechanical Design",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "mechanical/index"
+  }
+}

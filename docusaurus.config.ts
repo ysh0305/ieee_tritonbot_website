@@ -5,7 +5,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: 'UCSD TritonBot',
+  title: 'UCSD TritonBots',
   tagline: 'UC San Diego RoboCup SSL Team',
   favicon: 'img/favicon.ico',
 
@@ -56,8 +56,8 @@ const config: Config = {
       '@docusaurus/plugin-content-docs',
       {
         id: 'docs',
-        path: 'docs',
-        routeBasePath: 'docs',
+        path: 'about',
+        routeBasePath: 'about',
         sidebarPath: require.resolve('./sidebars.ts'),
         editUrl:
           'https://github.com/ysh0305/ieee_tritonbot_website/tree/main/',
@@ -117,6 +117,19 @@ const config: Config = {
         rehypePlugins: [rehypeKatex],
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'past_paper',
+        path: 'past_paper',
+        routeBasePath: 'past_paper',
+        sidebarPath: require.resolve('./sidebarsPast.ts'),
+        editUrl:
+          'https://github.com/ysh0305/ieee_tritonbot_website/tree/main/',
+        remarkPlugins: [remarkMath],
+        rehypePlugins: [rehypeKatex],
+      },
+    ],
   ],
 
   themeConfig: {
@@ -128,46 +141,53 @@ const config: Config = {
     },
 
     navbar: {
-      title: 'UCSD TritonBot',
+      title: 'UCSD TritonBots',
       logo: {
-        alt: 'UCSD TritonBot Logo',
+        alt: 'UCSD TritonBots Logo',
         src: 'img/logo.png',
       },
       items: [
         {
-          type: 'docSidebar',
+          type: 'doc',
           docsPluginId: 'docs',
-          sidebarId: 'tutorialSidebar',
+          docId: 'Tritonbots',
           position: 'right',
-          label: 'Introduction',
+          label: 'About Us',
         },
         {
-          type: 'docSidebar',
-          docsPluginId: 'mechanical',
-          sidebarId: 'mechanicalSidebar',
+          label: 'Current Team',
           position: 'right',
-          label: 'Mechanical',
+          items: [
+            {
+              label: 'Mechanical',
+              to: '/mechanical',
+            },
+            {
+              label: 'Electrical',
+              to: '/electrical',
+            },
+            {
+              label: 'Embedded',
+              to: '/embedded',
+            },
+            {
+              label: 'AI',
+              to: '/ai',
+            },
+          ],
         },
+
         {
-          type: 'docSidebar',
-          docsPluginId: 'electrical',
-          sidebarId: 'electricalSidebar',
+          label: 'Past Teams',
           position: 'right',
-          label: 'Electrical',
-        },
-        {
-          type: 'docSidebar',
-          docsPluginId: 'embedded',
-          sidebarId: 'embeddedSidebar',
-          position: 'right',
-          label: 'Embedded',
-        },
-        {
-          type: 'docSidebar',
-          docsPluginId: 'ai',
-          sidebarId: 'aiSidebar',
-          position: 'right',
-          label: 'AI',
+          items: [
+            {
+              label: '2025',
+              type: 'doc',
+              docsPluginId: 'past_paper',
+              docId: '2025/Introduction',
+            },
+          ],
         },
 
         {

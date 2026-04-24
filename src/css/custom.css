@@ -33,8 +33,9 @@
 }
 
 body:has(.home-hero-wrapper) .navbar {
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
   box-shadow: none !important;
+  backdrop-filter: blur(10px);
 }
 
 body:has(.home-hero-wrapper) .navbar__title,

@@ -59,7 +59,7 @@ const teamCards: TeamCard[] = [
 
 function TeamCardItem({card}: {card: TeamCard}): ReactNode {
   return (
-    <div className={`h-[20vw] mt-[2vw] ${card.cardBgClass} rounded-[2vw] p-[2vw] flex justify-between items-center`}>
+    <div className={`min-h-[20vw] mt-[2vw] ${card.cardBgClass} rounded-[2vw] p-[2vw] flex justify-between items-center`}>
       <div className='flex flex-col w-2/5 justify-between p-[1vw] h-[90%]'>
         <div>
           <text className={`${card.labelClass} w-fit p-[0.2vw] rounded-[0.2vw] text-[1.5vw] font-semibold leading-0`}>{card.teamName} <br/></text>

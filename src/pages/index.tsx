@@ -22,11 +22,11 @@ export default function Home(): ReactNode {
             <img src={useBaseUrl('/img/landing.png')} alt="Landing Background Image" className='absolute top-[-10%]'/>
           </div>
 
-          <div className='relative flex w-[75%] bg-white rounded-[3vw] py-[1.2vw] px-[4vw] text-black h-[25vw]'>
+          <div className='relative flex w-[75%] bg-white rounded-[3vw] py-[1.2vw] px-[4vw] text-black  min-h-[25vw]'>
             <div className='w-2/5'>
               <p className=' font-bold text-[2.7vw]'>What is TritonBots?</p>
               <p className='text-[1.2vw] mb-[10%]'>UC San Diego’s RoboCup team is one of IEEE’s largest projects. Different subteams come together to build 6 autonomous soccer-playing robots to compete in the international RoboCup Small Sized League Competition every year. </p>
-              <Link href='/about/Tritonbots' className="bg-black p-[1.2vw] rounded-[1vw] text-white hover:text-blue-200 no-underline active:opacity-80 duration-300"> More Infomation!</Link>
+              <Link href='/about/Tritonbots' className="bg-black p-[1.2vw] rounded-[1vw] text-white hover:text-blue-200 no-underline active:opacity-80 duration-300 text-[1.2vw]"> More Infomation!</Link>
             </div>
             <img src={useBaseUrl('/img/about.svg')} className='w-[38vw] absolute right-[-3%] top-[-5%]'/>
           </div>

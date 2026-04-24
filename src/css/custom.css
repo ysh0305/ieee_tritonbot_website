@@ -64,6 +64,32 @@ body:has(.home-hero-wrapper) .navbar__brand {
   padding-right: 2rem;
 }
 
+@media (max-width: 996px) {
+  .navbar__title,
+  .navbar__link {
+    font-size: 0.98rem;
+  }
+
+  .navbar__title {
+    font-size: 1.1rem;
+  }
+
+  .navbar__logo,
+  .navbar__brand img {
+    height: 2rem;
+  }
+
+  .navbar__item {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+
+  .navbar__inner {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
 .navbar__link--active,
 .navbar__link--active:hover {
   color: #3c406a;

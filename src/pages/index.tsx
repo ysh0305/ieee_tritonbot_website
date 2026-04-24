@@ -13,7 +13,7 @@ export default function Home(): ReactNode {
       wrapperClassName="home-hero-wrapper"
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <main className='w-screen bg-black'>
+      <main className='w-screen bg-[#11131F]'>
         <img src={useBaseUrl('/img/side.svg')} className='absolute left-0 z-20 w-[4vw]'/>
         <img src={useBaseUrl('/img/side.svg')} className='absolute left-[95vw] z-20 w-[4vw]'/>
         <div className='w-screen flex items-center flex-col'>
@@ -26,7 +26,7 @@ export default function Home(): ReactNode {
             <div className='w-2/5'>
               <p className=' font-bold text-[2.7vw]'>What is TritonBots?</p>
               <p className='text-[1.2vw] mb-[10%]'>UC San Diego’s RoboCup team is one of IEEE’s largest projects. Different subteams come together to build 6 autonomous soccer-playing robots to compete in the international RoboCup Small Sized League Competition every year. </p>
-              <Link href='/docs/Tritonbots' className="bg-black p-[1.2vw] rounded-[1vw] text-white hover:text-blue-200 no-underline active:opacity-80 duration-300"> More Infomation!</Link>
+              <Link href='/about/Tritonbots' className="bg-black p-[1.2vw] rounded-[1vw] text-white hover:text-blue-200 no-underline active:opacity-80 duration-300"> More Infomation!</Link>
             </div>
             <img src={useBaseUrl('/img/about.svg')} className='w-[38vw] absolute right-[-3%] top-[-5%]'/>
           </div>
